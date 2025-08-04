@@ -1,0 +1,628 @@
+@import "tailwindcss";
+
+/* Custom Typography Classes */
+.text-display-24-regular-white {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.text-display-20-semibold-white {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.text-display-20-semibold-blue {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0000FF;
+}
+
+.text-display-17-semibold-blue {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0000FF;
+}
+
+.text-display-17-semibold-dark {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #030303;
+}
+
+.text-display-17-regular-dark {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #030303;
+}
+
+.text-ui-17-semibold-dark {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #030303;
+}
+
+.text-ui-16-semibold-brown {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #554D44;
+}
+
+.text-ui-16-regular-brown {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #554D44;
+    text-align: left;
+}
+
+.text-ui-16-regular-gray {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #C7C7CD;
+}
+
+.text-ui-16-regular-black {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.text-ui-15-bold-white {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.text-ui-15-regular-dark {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #030303;
+}
+
+.text-ui-15-regular-white {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.text-display-14-semibold-blue {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0000FF;
+}
+
+.text-display-14-regular-blue {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #0000FF;
+}
+
+.text-display-12-semibold-pink {
+    font-family: -apple-system, BlinkMacSystemFont, "SF UI Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FF00FF;
+}
+
+.primary-color {             /* you pick the class name */
+    background: #0000ff;           /* raw value or var() | theme() | @apply */
+}
+
+
+/* CSS Variables */
+:root {
+    --primary-purple: #8b5cf6;
+    --primary-blue: #0000ff;
+    --gradient-primary: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+    --gradient-card: linear-gradient(135deg, #a855f7 0%, #6366f1 100%);
+    --background-color: #ffffff;
+    --card-background: #ffffff;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Reset and base styles */
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background-color);
+}
+
+/* Typography */
+h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0.75rem;
+}
+
+.header h1 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Header separator - extends beyond container to full screen width */
+.header-separator {
+    width: 100vw;
+    height: 2px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 0;
+    background-color: #e5e5e5;
+}
+
+/* Recipe list container */
+.recipe-list {
+    margin-top: 0.75rem;
+}
+
+/* Add button */
+.add-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.add-button:active {
+    transform: translateY(0);
+}
+
+/* SVG Add button - matching design */
+.add-button-svg {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button-svg:hover {
+    background-color: rgba(0, 0, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.add-button-svg:active {
+    transform: scale(0.95);
+}
+
+.add-button-svg svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* Action Button Component */
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+}
+
+.action-button:active {
+    transform: scale(0.95);
+}
+
+.action-button-add {
+    padding: 8px;
+}
+
+.action-button-back {
+    padding: 4px;
+}
+
+/* Recipe card link - remove underlines */
+.recipe-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recipe-list a:hover {
+    text-decoration: none;
+}
+
+.recipe-list a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Recipe card - matching 346x120 proportions */
+.recipe-card {
+    background: var(--card-background);
+    border-radius: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    box-shadow: none;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 346px;
+    height: 120px;
+    position: relative;
+}
+
+.recipe-card:hover {
+    transform: translateY(-1px);
+}
+
+.recipe-card-content {
+    display: flex;
+    padding: 20px 24px;
+    align-items: flex-start;
+    gap: 16px;
+    height: 100%;
+}
+
+/* Recipe icon on the left - proportional to 346x120 card */
+.recipe-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.recipe-icon-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Recipe info container - vertical layout */
+.recipe-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80px;
+    padding-top: 8px;
+}
+
+/* Recipe title */
+.recipe-title {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: Roboto;
+    color: #0000ff;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+/* Star rating - aligned left */
+.recipe-rating {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    text-decoration: none !important;
+}
+
+.recipe-rating * {
+    text-decoration: none !important;
+}
+
+/* Recipe time with clock icon */
+.recipe-time {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #6b7280;
+    text-decoration: none !important;
+}
+
+.recipe-time * {
+    text-decoration: none !important;
+}
+
+
+/* Recipe separator */
+.recipe-separator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+}
+
+.recipe-separator svg {
+    width: 100%;
+    height: 2px;
+    display: block;
+}
+
+/* Old recipe-duration styles removed - replaced by recipe-time */
+
+/* Rating stars */
+.rating {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #fbbf24;
+    font-size: 1rem;
+}
+
+.star.empty {
+    color: #d1d5db;
+}
+
+
+/* Buttons */
+.button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button-primary {
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.button-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.button-secondary {
+    background: var(--card-background);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.button-secondary:hover {
+    background: #f9fafb;
+}
+
+/* Loading and error states */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}
+
+.error {
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Back button */
+.back-button {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: -0.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+/* Recipe detail styles */
+.recipe-detail {
+    padding: 1rem 0;
+}
+
+.recipe-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* Recipe Hero Section (matching 02_detail design) */
+.recipe-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+}
+
+.recipe-hero-image {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+    border-radius: 20px;
+    padding: 3rem 1rem;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.ackee-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ackee-circle {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #0000ff;
+}
+
+.ackee-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0000ff;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.recipe-hero-rating {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-rating-section {
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.current-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.rating-text {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.user-rating,
+.user-rating-done {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.user-rating p,
+.user-rating-done p {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+
+.step-text {
+    flex: 1;
+    line-height: 1.5;
+}
+
+
+.remove-button {
+    flex-shrink: 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-actions .button {
+    flex: 1;
+}

@@ -24,10 +24,13 @@
         "tooling/*"
     ],
     "dependencies": {
+        "@tailwindcss/postcss": "4.1.11",
         "@tooling/eslint": "workspace:*",
         "@tooling/prettier": "workspace:*",
         "@tooling/typescript": "workspace:*",
         "husky": "^9.1.7",
+        "postcss": "8.5.6",
+        "tailwindcss": "4.1.11",
         "turbo": "^2.5.3"
     },
     "prettier": "@tooling/prettier/config"

@@ -1,8 +1,8 @@
 import 'normalize.css';
-import 'reset.css';
+import '../styles/globals.css';
 
-import type { AppProps } from 'next/app';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import type { AppProps } from 'next/app';
 
 import { ErrorBoundary } from '@workspace/errors';
 
